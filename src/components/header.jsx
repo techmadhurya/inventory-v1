@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MadhuryaLogo from "../assets/madhurya.png";
 
 function Header() {
+    const navigate = useNavigate();
     return (
         <div
             style={{
-                backgroundColor: "#FFFFFF",
+                backgroundColor: "#F5F5F5",
                 height: "100px",
                 display: "flex",
                 alignItems: "center",
@@ -20,24 +23,27 @@ function Header() {
                     style={{ height: "80px" }}
                 />
 
-                {/* <h1 style={{ margin: 0, color: "#C68A2E", fontWeight: "500" }}>
-                    MADHURYA
-                </h1> */}
+                <h2 style={{ margin: 0, color: "#C68A2E", fontWeight: "500" }}>
+                    DECOR
+                </h2>
             </div>
 
             {/* Login Button */}
-            <button
-                style={{
-                    padding: "8px 16px",
-                    borderRadius: "6px",
-                    border: "none",
-                    backgroundColor: "#8B3A3A",
-                    color: "white",
-                    cursor: "pointer"
-                }}
-            >
-                Login
-            </button>
+            <Link to="/inventory">
+                <button
+                    // onClick={() => navigate("/inventory")}
+                    style={{
+                        padding: "8px 16px",
+                        borderRadius: "6px",
+                        border: "none",
+                        backgroundColor: "#8B3A3A",
+                        color: "white",
+                        cursor: "pointer"
+                    }}
+                >
+                    Login
+                </button>
+            </Link>
         </div>
     );
 }

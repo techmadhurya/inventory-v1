@@ -1,9 +1,11 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import MadhuryaLogo from './assets/madhurya.png'
+import { Routes, Route } from "react-router-dom"
+import { Divider } from "@mui/material"
 import Header from './components/header'
 import './App.css'
+
+import Home from './pages/Home'
+import Inventory from './pages/Inventory'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +13,12 @@ function App() {
   return (
     <>
       <Header />
-      
+      <Divider />
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/inventory' element={<Inventory />} />
+      </Routes>
     </>
   )
 }
