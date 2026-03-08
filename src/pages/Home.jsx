@@ -2,15 +2,20 @@ import { useNavigate } from "react-router-dom";
 
 import bgImage from "../assets/images/bg1.png"
 import bgImage2 from "../assets/images/bg2.jpg"
+import bgVortexPng from "../assets/rainbow_vortex.png"
+import bgVortexSvg from "../assets/rainbow_vortex.svg"
 
 function Home() {
     const navigate = useNavigate();
     return <>
         <div style={{
-            backgroundImage: `url(${bgImage2})`,
-            height: "100vh",
+            // backgroundImage: `url(${bgVortexPng})`,
+            background: "#D2A4A0",
+            height: "500px",
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
+            padding: "50px",
+            border: "1px solid #000"
         }}>
 
             <h2 style={{ margin: 0, color: "#FFF", fontWeight: "500" }}>

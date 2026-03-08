@@ -7,9 +7,13 @@
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 0;
   will-change: filter;
   transition: filter 300ms;
+}
+
+#body {
+  width: 100%;
 }
 
 .logo:hover {
@@ -37,7 +41,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 0;
 }
 
 .read-the-docs {

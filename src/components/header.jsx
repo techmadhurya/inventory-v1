@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 import MadhuryaLogo from "../assets/madhurya.png";
 
 function Header() {
@@ -28,22 +28,19 @@ function Header() {
                 </h2>
             </div>
 
-            {/* Login Button */}
-            <Link to="/inventory">
-                <button
-                    // onClick={() => navigate("/inventory")}
-                    style={{
-                        padding: "8px 16px",
-                        borderRadius: "6px",
-                        border: "none",
-                        backgroundColor: "#8B3A3A",
-                        color: "white",
-                        cursor: "pointer"
-                    }}
-                >
-                    Login
-                </button>
-            </Link>
+            <button
+                // onClick={() => navigate("/login")}
+                style={{
+                    padding: "8px 16px",
+                    borderRadius: "6px",
+                    border: "none",
+                    backgroundColor: "#8B3A3A",
+                    color: "white",
+                    cursor: "pointer"
+                }}
+            >
+                Login
+            </button>
         </div>
     );
 }
