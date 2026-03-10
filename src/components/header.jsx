@@ -12,7 +12,7 @@ function Header() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
-                padding: "0 25px"
+                padding: "0 20px"
             }}
         >
             {/* Logo + Text */}
@@ -20,10 +20,10 @@ function Header() {
                 <img
                     src={MadhuryaLogo}
                     alt="Madhurya Logo"
-                    style={{ height: "80px" }}
+                    style={{ height: "75px", width: "200px" }}
                 />
 
-                <h2 style={{ margin: 0, color: "#C68A2E", fontWeight: "500" }}>
+                <h2 style={{ margin: 0, color: "#C68A2E", fontWeight: "800", fontSize: "20px" }}>
                     DECOR
                 </h2>
             </div>
