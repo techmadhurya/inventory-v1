@@ -1,57 +1,29 @@
-import bg1 from "./images/bg1.png";
-import bg2 from "./images/bg2.jpg";
+// Import all images from the folder
+const images = import.meta.glob("../assets/images/garlands/*.jpg", {
+    eager: true,
+    import: "default",
+});
 
+// Convert images object to sorted array
+const imageArray = Object.entries(images)
+    .sort((a, b) => {
+        const numA = parseInt(a[0].match(/(\d+)\.jpg$/)[1]);
+        const numB = parseInt(b[0].match(/(\d+)\.jpg$/)[1]);
+        return numA - numB;
+    })
+    .map((img) => img[1]);
 
-export const items = [
-    {
-        id: 1,
-        itemName: "Bulb Stand",
-        category: "Lighting",
-        price: "Rs 3000",
-        location: "Lakshmi Garden",
-        quantity: 4,
-        itemStatus: "Available",
-        tags: ["lighting", "sangeet"],
-        lastMoved: "2026-03-05",
-        BookedDates: [],
-        image: { bg1 }
-    },
-    {
-        id: 2,
-        itemName: "Bulb Stand",
-        category: "Lighting",
-        price: "Rs 3000",
-        location: "Lakshmi Garden",
-        quantity: 4,
-        itemStatus: "Available",
-        tags: ["lighting", "sangeet"],
-        lastMoved: "2026-03-05",
-        BookedDates: [],
-        image: bg2
-    },
-    {
-        id: 3,
-        itemName: "Bulb Stand",
-        category: "Lighting",
-        price: "Rs 3000",
-        location: "Lakshmi Garden",
-        quantity: 4,
-        itemStatus: "Available",
-        tags: ["lighting", "sangeet"],
-        lastMoved: "2026-03-05",
-        BookedDates: []
-    },
-    {
-        id: 4,
-        itemName: "Bulb Stand",
-        category: "Lighting",
-        price: "Rs 3000",
-        location: "Lakshmi Garden",
-        quantity: 4,
-        itemStatus: "Available",
-        tags: ["lighting", "sangeet"],
-        lastMoved: "2026-03-05",
-        BookedDates: []
-    },
-
-]
+// Generate 93 objects
+export const items = imageArray.map((img, index) => ({
+    id: index + 1,
+    itemName: `Garland ${index + 1}`,
+    category: "garlands",
+    price: "Rs 3000",
+    location: "vendor",
+    quantity: 1,
+    itemStatus: "Available",
+    tags: ["flower", "garland"],
+    lastMoved: "2026-03-05",
+    BookedDates: [],
+    image: img,
+}));

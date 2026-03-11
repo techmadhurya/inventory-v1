@@ -1,16 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
-import bgImage from "../assets/images/bg1.png"
-import bgImage2 from "../assets/images/bg2.jpg"
-import bgVortexPng from "../assets/rainbow_vortex.png"
-import bgVortexSvg from "../assets/rainbow_vortex.svg"
+import bgImage from "../assets/pattern1.png"
+import bgImage2 from "../assets/pattern2.png"
 
 function Home() {
     const navigate = useNavigate();
     return <>
         <div style={{
-            // backgroundImage: `url(${bgVortexPng})`,
-            background: "#D2A4A070",
+            backgroundImage: `url(${bgImage2})`,
+            backgroundColor: "#D2A4A070",
             height: "500px",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -18,7 +16,7 @@ function Home() {
             border: "1px solid #000"
         }}>
 
-            <h2 style={{ margin: 0, color: "#FFF", fontWeight: "500" }}>
+            <h2 style={{ margin: 0, color: "#8B3A3A", fontWeight: "500" }}>
                 Decorating a Lifetime of Memories
             </h2>
 
@@ -30,7 +28,7 @@ function Home() {
                         borderRadius: "6px",
                         border: "none",
                         backgroundColor: "#8B3A3A",
-                        color: "white",
+                        color: "#FFFFFF",
                         cursor: "pointer"
                     }}
                 >
