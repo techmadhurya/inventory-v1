@@ -10,7 +10,7 @@ function Home() {
     return <>
         <div style={{
             // backgroundImage: `url(${bgVortexPng})`,
-            background: "#D2A4A0",
+            background: "#D2A4A070",
             height: "500px",
             backgroundSize: "cover",
             backgroundPosition: "center",
