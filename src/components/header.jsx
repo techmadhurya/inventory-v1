@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import MadhuryaLogo from "../assets/madhurya.png";
+import MadhuryaLogo from "../assets/madhuryaLogo2.png";
 
 function Header() {
     const navigate = useNavigate();
@@ -20,11 +20,11 @@ function Header() {
                 <img
                     src={MadhuryaLogo}
                     alt="Madhurya Logo"
-                    style={{ height: "75px", width: "200px" }}
+                    style={{ height: "75px", width: "75px" }}
                 />
 
-                <h2 style={{ margin: 0, color: "#C68A2E", fontWeight: "800", fontSize: "20px" }}>
-                    DECOR
+                <h2 style={{ margin: 0, color: "#C68A2E", fontWeight: "1000", fontSize: "20px", fontFamily: "cursive" }}>
+                    MADHURYA DECOR
                 </h2>
             </div>
 

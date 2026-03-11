@@ -8,9 +8,9 @@ import { items } from "../data/sampleData"
 function Inventory() {
     return <>
         <Box sx={{ display: 'flex', height: '100vh' }}>
-            <Box sx={{ width: "20%", p: 2, backgroundColor: "#fff" }}>
+            {/* <Box sx={{ width: "20%", p: 2, backgroundColor: "#fff" }}>
                 <SideBar />
-            </Box>
+            </Box> */}
             <Box sx={{ width: "80%", p: 2, backgroundColor: "#f5f5f5" }}>
                 <h3> Inventory Page</h3>
                 <Grid container spacing={3} padding={3}>
@@ -32,6 +32,9 @@ function Inventory() {
                                     </Typography>
                                     <Typography variant="body2">
                                         Quantity: {item.quantity}
+                                    </Typography>
+                                    <Typography variant="body2">
+                                        Price: {item.price}
                                     </Typography>
                                 </CardContent>
 

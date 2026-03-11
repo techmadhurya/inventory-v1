@@ -1,22 +1,26 @@
-import bg1 from "../assets/images/bg1.png"
-import bg2 from "../assets/images/bg2.png"
+import bg1 from "./images/bg1.png";
+import bg2 from "./images/bg2.jpg";
+
+
 export const items = [
     {
         id: 1,
         itemName: "Bulb Stand",
         category: "Lighting",
+        price: "Rs 3000",
         location: "Lakshmi Garden",
         quantity: 4,
         itemStatus: "Available",
         tags: ["lighting", "sangeet"],
         lastMoved: "2026-03-05",
         BookedDates: [],
-        image: bg1
+        image: { bg1 }
     },
     {
         id: 2,
         itemName: "Bulb Stand",
         category: "Lighting",
+        price: "Rs 3000",
         location: "Lakshmi Garden",
         quantity: 4,
         itemStatus: "Available",
@@ -29,6 +33,7 @@ export const items = [
         id: 3,
         itemName: "Bulb Stand",
         category: "Lighting",
+        price: "Rs 3000",
         location: "Lakshmi Garden",
         quantity: 4,
         itemStatus: "Available",
@@ -40,6 +45,7 @@ export const items = [
         id: 4,
         itemName: "Bulb Stand",
         category: "Lighting",
+        price: "Rs 3000",
         location: "Lakshmi Garden",
         quantity: 4,
         itemStatus: "Available",
