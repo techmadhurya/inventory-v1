@@ -9,13 +9,19 @@ function Inventory() {
     return <>
 
         <h3> Inventory Page</h3>
-        <Grid container spacing={3} padding={3}>
+        <Grid container spacing={3} padding={3}
+            style={{ backgroundColor: "#0A6C70" }}
+        >
             {items.map((item) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={item.id}>
-                    <Card>
+                <Grid item xs={12} sm={6} md={4} lg={4} xl={4} key={item.id}>
+                    <Card
+                        style={{
+                            // minWidth: "180px", backgroundColor: "#0A6C72", color: "#FFFFFF"
+                            minWidth: "180px"
+                        }}>
                         <CardMedia
                             component="img"
-                            height="180"
+                            height="200"
                             image={item.image}
                             alt={item.itemName}
                         />
